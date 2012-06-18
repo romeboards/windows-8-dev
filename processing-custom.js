@@ -10,6 +10,18 @@
 
 ***/
 
+/* 
+
+    custom IE10/Windows 8 multitouch support added by
+    Dan Kass, June 2012.
+    
+    This code is meant to be used only in specific cases involving MS Pointer events,
+    and does not handle WebKit touch events seen in the unmodified version of 
+    processing.js v1.3.6
+    
+    
+*/
+
 (function(window, document, Math, undef) {
   var nop = function() {};
   var debug = function() {
