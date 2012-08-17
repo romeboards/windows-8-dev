@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TECTONIC-DEV</Machine>
+    <WindowsUser>william</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\1.jpg">
+      <PackagePath>images\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\10.jpg">
+      <PackagePath>images\10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\2.jpg">
+      <PackagePath>images\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\3.jpg">
+      <PackagePath>images\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\4.jpg">
+      <PackagePath>images\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\5.jpg">
+      <PackagePath>images\5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\6.jpg">
+      <PackagePath>images\6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\7.jpg">
+      <PackagePath>images\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\8.jpg">
+      <PackagePath>images\8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\9.jpg">
+      <PackagePath>images\9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\images\tile.gif">
+      <PackagePath>images\tile.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\js\jquery.js">
+      <PackagePath>js\jquery.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\js\transform.js">
+      <PackagePath>js\transform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Parallax\Parallax\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\">
+      <Name>Microsoft.WinJS.1.0.RC</Name>
+      <Version>1.0.8377.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0.RC, MinVersion=1.0.8377.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\Microsoft.WinJS.1.0.RC.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

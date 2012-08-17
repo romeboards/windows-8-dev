@@ -1,0 +1,65 @@
+﻿body {
+    background: #f0f0f0 url('/images/tile.gif') repeat -70% 0;
+}
+
+h1 {
+    font-family: 'Plaster', sans-serif;
+    color: rgb(125,125,125);
+    margin-top:40px;
+    margin-left:40px;
+    font-size:40px;
+	text-shadow:
+		0 -1px 0 rgb(75,75,75),
+		0 1px 0 rgb(255,255,255);
+}
+
+.wrapper {
+    height:575px;
+    width:1366px;
+    margin-top:50px;
+    overflow:hidden;
+}
+
+ul {
+    height: 600px;
+    display: -ms-flexbox;
+    -ms-flex-align: baseline;
+    overflow-y:hidden;
+    list-style:none;  
+
+}
+
+li.crop {
+    height:500px;
+    margin-right: 100px;
+	overflow:hidden;
+	border:10px solid white;
+    z-index:5;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
+}
+
+img {  
+    height:500px;
+    z-index:1;
+}
+
+ul.new li.crop {
+    width: 600px;
+}
+
+ul.new li.crop img {
+    width: 800px;
+    margin-left:-100px;  /* margin /2 */
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
