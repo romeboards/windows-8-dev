@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Processing_Test_2</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- Processing_Test_2 references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/appbar.js"></script>
+
+    <script src="/js/processing-custom.js"></script>
+
+    <script type="text/javascript">
+        var bound = false;
+
+        function bindJavascript() {
+            var pjs = Processing.getInstanceById('processing');
+            if (pjs != null) {
+                pjs.bindJavascript(this);
+                bound = true;
+            }
+            if (!bound) setTimeout(bindJavascript, 250);
+        }
+        bindJavascript();
+
+        function clearCanvas() {
+            var pjs = Processing.getInstanceById('processing');
+            pjs.clearScreen();
+        }
+        function blackCircle() {
+            var pjs = Processing.getInstanceById('processing');
+            pjs.blackCircle();
+        }
+        function colorCircle() {
+            var pjs = Processing.getInstanceById('processing');
+            pjs.colorCircle();
+        }
+
+        function setSize() {
+            var size = document.getElementById('sizeRangeControl').value;
+            var pjs = Processing.getInstanceById('processing');
+            pjs.setSize(size);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('sizeRangeControl').addEventListener('change', setSize, false);
+        }, false);
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h1>rainbow paint</h1>
+    </div>
+
+    <canvas id="processing" data-processing-sources="node.pde basic.pde"></canvas>
+
+    <div id="sizeFlyout" data-win-control="WinJS.UI.Flyout">
+        <input id="sizeRangeControl" type="range" min="30" max="150" step="5" value="75" />
+    </div>
+
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="{layout:'custom'}">
+        <button  
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdClear', label:'Clear', icon:'page',
+                                section:'global',tooltip:'Clear Canvas'}">
+        </button>
+        <hr 
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{type:'separator', section:'global'}" />
+        <button  
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdBlack', label:'Black', icon:'edit',
+                                section:'global',tooltip:'Black Pen'}">
+        </button>
+        <button  
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdColor', label:'Rainbow', icon:'highlight',
+                                section:'global',tooltip:'Rainbow Pen'}">
+        </button>
+        <button  
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdSize', label:'Size', icon:'switch', type:'flyout',
+                                section:'global',tooltip:'Size', flyout:sizeFlyout}">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TECTONIC-DEV</Machine>
+    <WindowsUser>william</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>2D775770D757E657085582980D74F677490D3EABEE4BEBAE1EF967AACEA10D11</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>f01e2115-7a89-4e8e-86fd-82feb80e7d30_1.0.0.0_neutral__vxawtbajvtch4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>f01e2115-7a89-4e8e-86fd-82feb80e7d30_vxawtbajvtch4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>f01e2115-7a89-4e8e-86fd-82feb80e7d30</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=dan kass</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-22T11:32:06.201</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\basic.pde">
+      <PackagePath>basic.pde</PackagePath>
+      <Modified>2012-06-15T10:04:54.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\node.pde">
+      <PackagePath>node.pde</PackagePath>
+      <Modified>2012-06-15T10:04:54.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2012-06-22T11:29:25.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T17:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T17:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T17:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-19T17:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\js\appbar.js">
+      <PackagePath>js\appbar.js</PackagePath>
+      <Modified>2012-06-22T11:29:25.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\js\base64.js">
+      <PackagePath>js\base64.js</PackagePath>
+      <Modified>2012-06-15T14:55:13.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2012-04-23T20:59:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\js\processing-custom.js">
+      <PackagePath>js\processing-custom.js</PackagePath>
+      <Modified>2012-06-14T17:05:31.841</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\js\processing.js">
+      <PackagePath>js\processing.js</PackagePath>
+      <Modified>2012-06-11T09:14:14.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2012-06-15T12:02:47.210</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\william\Documents\Visual Studio 2012\Projects\Processing Test 2\Processing Test 2\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-06-22T11:32:06.076</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\">
+      <Name>Microsoft.WinJS.1.0.RC</Name>
+      <Version>1.0.8377.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0.RC, MinVersion=1.0.8377.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0.RC\1.0\Microsoft.WinJS.1.0.RC.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

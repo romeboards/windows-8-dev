@@ -1,0 +1,13 @@
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bin\Debug\resources.pri
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bin\Debug\AppxManifest.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bin\Debug\RSSr.build.appxrecipe
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\priconfig.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\layout.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\resources.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\pri.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\LanguageQualifiers.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\ProjectArchitectures.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\priconfig.xml.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\layout.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\resources.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\RSSr\RSSr\bld\Debug\pri.resfiles.intermediate

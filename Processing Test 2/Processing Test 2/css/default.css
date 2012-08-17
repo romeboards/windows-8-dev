@@ -1,0 +1,24 @@
+﻿body {
+}
+
+h1 {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 24px;
+}
+
+#header {
+    position: fixed;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
