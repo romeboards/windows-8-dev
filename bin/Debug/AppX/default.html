@@ -1,0 +1,1124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+      --  SI.COM DUAL SPEED PROTOTYPE
+      --  dan // dev // tectonic [gotectonic dot com]
+      --  questions? daniel.kass at tufts.edu
+      --
+      --  documentation and notes found in app.js
+      -->
+    
+    <meta charset="utf-8" />
+    <title>SI.com App Prototype</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- Timeline references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.easing.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <!-- Box Score AppBar [DEAD] -->
+    <div id="customLayoutAppBar" data-win-control="WinJS.UI.AppBar" aria-label="Navigation Bar"
+        data-win-options="{layout:'custom',placement:'top'}">
+        <header aria-label="Navigation bar" role="banner">
+            <div class="boxscore boxscore-main">
+                <div class="box-content">
+                    <div class="box-title">
+                            <h1>SCORES</h1>
+                            <h4>GO HERE</h4>
+                     </div>
+                    <ul class="box-list">
+                        <li>
+                            <h1>NFL</h1>
+                            <h4>FOOTBALL</h4>
+                        </li>
+                        <li>
+                            <h1>NBA</h1>
+                            <h4>BASKETBALL</h4>
+                        </li>
+                        <li>
+                            <h1>MLB</h1>
+                            <h4>BASEBALL</h4>
+                        </li>
+                        <li>
+                            <h1>NHL</h1>
+                            <h4>HOCKEY</h4>
+                        </li>
+                        <li>
+                            <h1>NCAA</h1>
+                            <h4>FOOTBALL</h4>
+                        </li>
+                        <li>
+                            <h1>NCAA</h1>
+                            <h4>BASKETBALL</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="boxscore nfl">
+                    <div class="box-content">
+                        <div class="box-title">
+                                <h1>NFL</h1>
+                                <h4>FOOTBALL</h4>
+                         </div>
+                        <ul class="box-list">
+                            <li>
+                                <img src="/images/scores-other.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxscore nba">
+                    <div class="box-content">
+                        <div class="box-title">
+                                <h1>NBA</h1>
+                                <h4>BASKETBALL</h4>
+                         </div>
+                        <ul class="box-list">
+                            <li>
+                                <img src="/images/scores-other.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxscore mlb">
+                    <div class="box-content">
+                        <div class="box-title">
+                                <h1>MLB</h1>
+                                <h4>BASEBALL</h4>
+                         </div>
+                        <ul class="box-list">
+                            <li>
+                                <img src="/images/scores.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxscore nhl">
+                    <div class="box-content">
+                        <div class="box-title">
+                                <h1>NHL</h1>
+                                <h4>HOCKEY</h4>
+                         </div>
+                        <ul class="box-list">
+                            <li>
+                                <img src="/images/scores-other.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxscore ncaa-foot">
+                    <div class="box-content">
+                            <div class="box-title">
+                                    <h1>NCAA</h1>
+                                    <h4>BASKETBALL</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <h2>ATLANTIC 10</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>ATLANTIC COAST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>BIG EAST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>BIG TEN</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>PAC 12</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>MOUNTAIN WEST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>ATLANTIC 10</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>ATLANTIC COAST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>BIG EAST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>BIG TEN</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>PAC 12</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>MOUNTAIN WEST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxscore ncaa-basket">
+                    <div class="box-content">
+                            <div class="box-title">
+                                    <h1>NCAA</h1>
+                                    <h4>BASKETBALL</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <h2>ATLANTIC 10</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>ATLANTIC COAST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>BIG EAST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>BIG TEN</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>PAC 12</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                                <li>
+                                    <h2>MOUNTAIN WEST</h2>
+                                    <h4>CONFERENCE</h4>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>ATLANTIC 10</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>ATLANTIC COAST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>BIG EAST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>BIG TEN</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>PAC 12</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxscore ncaa-foot">
+                        <div class="box-content">
+                            <div class="box-title">
+                                    <h2>MOUNTAIN WEST</h2>
+                                    <h4>CONFERENCE</h4>
+                             </div>
+                            <ul class="box-list">
+                                <li>
+                                    <img src="/images/scores-other.png" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-spon">
+                <h4>SPONSOR</h4>
+            </div>
+
+          <!--  <h1>BOX SCORES</h1>
+            <div class="box-score">
+                <img src="/images/boxscore.png" />
+            </div>-->
+        </header>
+    </div>
+
+    <section class="main-content">
+
+                <ul class="time-stamps">
+                    <li>4:00PM</li>
+                    <li>3:00PM</li>
+                    <li>2:00PM</li>
+                </ul>
+
+                    <div class="container container-small">
+                    <section class="time-block">
+							<article class="small truth">
+                                <h3 class="article-type">Truth & Rumors</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+									<div class="status">
+										<h1>25</h1>
+										<h2>New Stories</h2>
+									</div>
+									<img src="/images/greyscale/truth-1.jpg" />
+									<div class="circle"><p>NBA<p></div>
+									<div class="tease">
+										<h1>Truth and Rumor Article Headline</h1>
+										<h3>Media Source</h3>
+										<p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>	
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/tracking-1.jpg" />
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div> 
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div> 
+                            </article>		
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								</div>
+                                <div class="article-expanded-content">
+                                     <div class="col-side">
+                                        <div class="author-info">
+                                            <img src="/images/greyscale/writers-1.jpg" />
+										        <h2>Zach Lowe on the NBA</h2>
+										        <h1>The Point Forward</h1>
+								        </div>
+                                        <h3>Justin Verlander is the first All-Star starter who has won rookie of the year, Cy Young, and MVP awards. <br/><em class="credit">- Photo Credit</em></h3>
+                                        <img src="/images/greyscale/expanded-2.jpg" />
+                                        <h3>Justin Verlander is the first All-Star starter who has won rookie of the year, Cy Young, and MVP awards. <br/><em class="credit">- Photo Credit</em></h3>
+                                     </div>
+                                     <div class="col-main">
+                                        <h1>Ryan Anderson's Deal With Hornets Can Work; Celtics Overpay for Jeff Green</h1>
+                                        <img src="/images/greyscale/expanded-1.jpg" />
+                                        <h4>POSTED JULY 9, 2012     1:18PM</h4>
+                                        <p>DAYS before the draft, the Hornets opened up about $7 million of additional salary-cap space when they sent center Emeka Okafor and small forward Trevor Ariza to Washington for small forward Rashard Lewis’ partially guaranteed expiring contract (since bought out). Though the trade didn’t quite create enough room for a max-level free agent offer, it did loosen up things enough for New Orleans to pursue a solid veteran. And so on Sunday, the Hornets found their man: forward Ryan Anderson, acquired in a sign-and-trade for Gustavo Ayon on a contract that will pay him $34 million over four years, or $8.5 million per season, according to SI.com’s Sam Amick.</p>
+                                        <p>The deal still leaves the Hornets with about $4 million in cap room that they could use during the three days they have to match Phoenix’s offer sheet for shooting guard Eric Gordon, provided they renounces their rights to all of their other free agents — Carl Landry, Chris Kaman and Marco Belinelli. In a much trickier alternative, the Hornets could also keep those free agents on the books for a few days, stay over the cap, work to create a trade exception in a theoretical Eric Gordon sign-and-trade with Phoenix and fit Anderson into that exception. That would allow the Hornets to snag an asset low-priced asset from Phoenix and keep the mid-level exception in play.</p>
+                                        <p>Regardless, the Hornets have signed Anderson to the precise sort of contract (a deal in the $6 million to $10 million range for a non-star) that a growing number of NBA geeks would recommend avoiding. The Spurs, for instance, have signed one such contract by my count — the Richard Jefferson deal, later dumped on the Warriors — since the institution of an annual luxury tax in 2005. They traded George Hill for Kawhi Leonard precisely because they did not want to sign Hill, now 26, to the five-year, $40 million contract that the Pacers and the guard agreed to last week.</p>
+                                        <p>The Rockets, the NBA’s leading geeks, are certainly operating like a team that would prefer a combination of stars, expiring contracts and guys on rookie deals or minimum-level contracts, but even they are poised to snag Bulls restricted free-agent center Omer Asik on a contract in this exact range. The Thunder have one player in this salary range right now, center Kendrick Perkins, and he is already talked about around the league as a potential amnesty candidate. The Heat have two players nearly in this range, swingman Mike Miller and power forward Udonis Haslem, but they signed Miller via cap space, and they remain a close approximation of a team built on the stars-or-cheapies-only model.</p>
+                                        <p>But that is a hard model to execute in reality. League rules mitigate against it. Teaming up stars means tying up your cap space in them, and that, in turn, means the mid-level exception — right in this range — is the only easy way to beef up your roster with veteran talent. Larry Bird Rights, which allow teams to go over the cap when re-signing their own free agents, also create opportunities for these kind of deals.</p>
+                                        <p>A deal like Anderson’s is a risk, but the Hornets are well-positioned for it. For one, Anderson has two proven elite skills in high-volume three-point shooting and offensive rebounding. Power forwards who can shoot threes in high volumes — and not just when left wide open, with eons to set their feet — are enormously valuable players with a long record of boosting their team’s scoring margin. The spacing they create is very difficult for defenses to handle.</p>
+                                        <p>Acquiring Anderson may mean that No. 1 pick Anthony Davis has to develop into an NBA center, since Anderson cannot play small forward. That might not be ideal, given Davis’ lack of brute size and Anderson’s troubles as a post defender, but let’s pump the brakes on dismissing the Anderson/Davis front line before it even plays a game. The Hornets aren’t exactly title contenders, which means this team and these players have room to grow. And though there are some brutish teams in the Western Conference, especially the Lakers and Grizzlies, a Anderson/Davis pairing will create its own mismatches. We just watched an NBA Finals in which both teams were better when playing smaller.</p>
+                                        <p>The jury is obviously out on how Anderson will perform without center Dwight Howard to open up the floor on the pick-and-roll and cover for him on defense. For three consecutive seasons, the Magic have been much better when Anderson is on the floor with Howard than when Anderson is out there with another Orlando big man. That seems elementary; the Magic are better when Howard plays, and any other Orlando player’s on/off splits reflect this.</p>
+                                        <p>But the Anderson splits are dramatic, and they infect his individual numbers a bit. The Magic scored 109.5 points per 100 possessions last season and allowed just 100 when Anderson and Howard played together, a scoring margin that would have led the league. With Anderson alone, their scoring dropped to 104.1 points per 100 possessions and their points allowed number jumped to 103.7, the margin of a middling team.</p>
+                                        <p>The split has been even more dramatic in previous seasons. Individually, Anderson shot 41.6 percent from three-point range with Howard on the floor last season and 35.5 percent with Howard on the bench. Read that stat any way you’d like: Anderson’s shooting percentage from deep, his most important asset, fell off without Howard to draw attention in the post and the pick-and-roll, but he maintained an above-average mark while still hoisting an insane 8.2 threes per 40 minutes. And in 2010-11, Anderson actually shot better from beyond the arc with Howard on the bench. He also shot better and more often from two-point range last season when Howard sat, suggesting that he’s capable of taking on a larger role in the offense.</p>
+                                        <p>Put it all together, and you can understand why the Hornets have confidence that Anderson’s three-point shooting can sustain without Howard — and why they signed him to a $34 million contract. That’s especially so because New Orleans can still work its way to max-level cap room next summer by renouncing point guard Jarrett Jack and declining what amount to options on forward-center Jason Smith and shooting guard Xavier Henry.</p>
+                                        <p>Anderson just turned 24 in May, and has room to add to something to his game — a couple of post-up moves, or a more reliable off-the-dribble game that he can use when defenses run him off the three-point line. Remember: Last season was Anderson’s first averaging more than 22.3 minutes per game. There is room to develop.</p>
+                                        <p>That seems less true for both Hill (already 26) and forward Jeff Green (turning 26 next month), who agreed to return to Boston on a four-year, $36 million deal that stands as a wild overpay — so wild that I’ll be shocked if at least the final season isn’t fully or partially non-guaranteed. Green has never posted a league-average Player Efficiency Rating, and save for nailing 38.9 percent of his threes in his second season, he’s never put up any major statistic that would rank above average for either forward position. Every team for which he has played has recorded a much better scoring margin with Green on the bench.</p>
+                                        <p>The Thunder often used Green at power forward, where he has been a disaster, and it’s possible he’ll function much better as a small forward on a veteran team that prioritizes defense above all else. His numbers, and those of his team, have always been much better when Green is at small forward. But at this price, I’d want some piece of sustained data I could point to and say, “This player does Thing X well, and his team’s scoring margin improved when he was on the floor over Extended Time Period Y.”</p>
+                                        <p>That track record doesn’t exist with Green. It does with Anderson. The Green contract — which comes after he missed last season because of a heart condition — is the kind of Bird Rights deal into which over-the-cap teams are trapped. Boston could have carved out major cap room this summer, but it understandably chose not to do so. The team looked at the free-agency landscape for this season and next, saw no star likely to sign there and went with a middle path of staying over the cap, bringing back several key holdovers (including Kevin Garnett and Brandon Bass) and hoping new additions (such as Jason Terry, via the mid-level), young players and good health could keep it in title contention.</p>
+                                        <p>Boston has tried to do that and remain flexible at the same time, but these deals could tie up its long-hoarded cap space for the next two summers. Assuming all these new deals are fully guaranteed for 2013-14, the Celtics have something like $66 million already on the books for next season, putting the luxury tax in play next summer. Assuming the same for 2014-15, Boston could have nearly $52 million on the books before even considering cap holds for small forward Paul Pierce and shooting guard Avery Bradley, both of whom will be free agents after the 2013-14 season.</p>
+                                        <p>That $52 million figure will obviously drop if Terry’s and Green’s deals are partially guaranteed for that 2014-15 season. But deals like these — and upcoming ones for forwards Ersan Ilyasova (likely with Milwaukee) and Nicolas Batum (with Minnesota or Portland) — are risky, and a large portion of them end up being a source of regret for the signing team. This is why Cleveland is reportedly interested in taking on Kris Humphries in a potential Brooklyn/Orlando Howard deal only if the free-agent power forward signs a contract that is fully non-guaranteed after Year 1.</p>
+                                        <p>The Hornets are betting that Anderson’s deal will be the exception — one that proves valuable over time. The available data say that is a reasonable bet, at least compared with some of these other contracts..</p>
+                                     </div>
+                                </div>                                  
+                            </article>																		
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div> 
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>		
+                             <article class="small flash">
+                                <h3 class="article-type">Game Flash</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/phillies.png" /></div>
+                                        <h3>Phillies</h3>
+										<h1>03</h1>
+									</div>
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/rays.png" /></div>
+                                        <h3>Rays</h3>
+										<h1>01</h1>
+									</div>
+								</div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>                       				
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-2.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div> 
+                                  <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>                                 
+                            </article>
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>  
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div> 
+                            </article>		
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div> 
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>	
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>                                    
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                                  <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>                                  
+                            </article>
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">										
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div> 
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div>                                  
+                            </article>	
+                            <article class="small flash">
+                                <h3 class="article-type">Game Flash</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/yankees.png" /></div>
+                                        <h3>Yankees</h3>
+										<h1>09</h1>
+									</div>
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/sox.png" /></div>
+                                        <h3>Red Sox</h3>
+										<h1>01</h1>
+									</div>
+								</div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-2.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>	
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/truth-2.jpg" />
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div> 
+                            </article>	
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>	
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">										
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>  
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div> 
+                            </article>	
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div> 
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">										
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div> 
+                                     <div class="article-expanded-content">
+                                         <h1>Expanded Content</h1>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                         <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                         <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                     </div>                                
+                            </article>	
+                            <article class="small flash">
+                                <h3 class="article-type">Game Flash</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/angels.png" /></div>
+                                        <h3>Angels</h3>
+										<h1>00</h1>
+									</div>
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/marlins.png" /></div>
+                                        <h3>Marlins</h3>
+										<h1>02</h1>
+									</div>
+								</div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div> 
+                            </article>
+                     </section>       
+                    
+                 <section class="time-block">
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/tracking-3.jpg" />										
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>  
+                            </article>	
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div>   
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/tracking-2.jpg" />
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>   
+                            </article>	
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">									
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>  
+                            </article>	
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div>   
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">	
+                                        <img src="/images/greyscale/truth-2.jpg" />								
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>  
+                            </article>	
+                    </section>      
+
+                   <section class="time-block">
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/truth-3.jpg" />
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>
+                            </article>	
+                            <article class="small flash">
+                                <h3 class="article-type">Game Flash</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/mariners.png" /></div>
+                                        <h3>Mariners</h3>
+										<h1>05</h1>
+									</div>
+									<div class="status">
+                                        <div class="circle"><img src="/images/greyscale/white_sox.png" /></div>
+                                        <h3>White Sox</h3>
+										<h1>04</h1>
+									</div>
+								</div>
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-2.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div>
+                            </article>	
+                            <article class="small story">
+                                    <h3 class="article-type">Tracking Blog</h3>
+									<p class="article-time">3:30PM</p>
+                                    <div class="article-content">
+										<img src="/images/greyscale/truth-2.jpg" />
+									    <h1>Tracking Blog Headline Llorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</h1>
+								     </div>
+                            </article>	
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>	
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="small writers">
+                                <h3 class="article-type">SI Writers</h3>
+								<p class="article-time">3:39PM</p>
+                                <div class="article-content">
+                                    <img src="/images/greyscale/writers-1.jpg" />
+                                    <div class="tease">
+										<h1>Column Name</h1>
+										<h2>Firstname LASTNAME</h2>
+									</div>
+								 </div> 
+                            </article>
+							<article class="small quote">
+                                <h3 class="article-type">Tweet</h3>
+							    <p class="article-time">3:55PM</p>
+                                <div class="article-content">
+                                    <div class="tweet">
+										<h1>@Composer</h1>
+                                        <p>This is a quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit sed loar.</p>
+                                    </div>
+                                </div>
+                            </article>
+                       </section>
+                </div>
+
+
+                <div class="container container-big">
+                    
+                    <section class="time-block">
+                        <article class="top t1">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:45PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/top-1.jpg" />
+                                <div class="tease">
+                                    <h1>Tee Ones Article Headline</h1>
+                                    <h3>Author LASTNAME</h3>
+                                    <p>Teaser body text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, tortor vel ultricies lacinia...</p>
+                                 </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <div class="col-main">
+                                    <h1>Expanded Content</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                    <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                    <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>
+                             </div>         
+                        </article>
+                        <article class="top">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:45PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/top-2.jpg" />
+                                <div class="tease">
+                                    <h1>Top Story Title Usually A Bit Longer</h1>
+                                    <h3>Author LASTNAME</h3>
+                                    <p>Teaser text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum.</p>
+                                 </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>         
+                        </article>
+                      <article class="top gallery">
+                                <h3 class="article-type">Photo Gallery</h3>
+								<p class="article-time">3:15PM</p>    
+                                <div class="article-content">                          
+									<img class="image-main" src="/images/greyscale/gallery-1.jpg" />
+									<div class="circle"><p>Photo Gallery<br/> Title<p></div>
+									<div class="thumbs">
+										<img class="image-thumb" src="/images/greyscale/gallery-2.jpg" />
+										<img class="image-thumb" src="/images/greyscale/gallery-3.jpg" /> 											
+									</div>									
+								 </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>
+                            </article> 
+                        <article class="top t1">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:45PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/top-3.jpg" />
+                                <div class="tease">
+                                    <h1>Tee Ones Article Headline</h1>
+                                    <h3>Author LASTNAME</h3>
+                                    <p>Teaser body text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, tortor vel ultricies lacinia...</p>
+                                 </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>         
+                        </article>
+                        <article class="top media">
+                            <h3 class="article-type">Video</h3>
+                            <p class="article-time">3:05PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/video-1.jpg" />
+                                <div class="tease">
+                                    <h1>Video Title, Usually <br/> Three Lines</h1>
+                                    <p>Intro body text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, tortor vel ultricies lacinia...</p>
+                                </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>
+                        </article>
+                    </section>
+
+                    <section class="time-block">
+                        <article class="top no-photo">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:05PM</p>
+                            <div class="article-content">
+								<h1>Top Story Headline With No Photo And Big Type.</h1>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>
+                        </article>
+                        <article class="top media">
+                            <h3 class="article-type">Photo Blog</h3>
+                            <p class="article-time">3:05PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/photo-1.jpg" />
+                                <div class="tease">
+                                    <p>Teaser caption aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales.</p>
+                                </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>
+                        </article>
+                         <article class="top gallery">
+                                <h3 class="article-type">Photo Gallery</h3>
+								<p class="article-time">3:15PM</p>    
+                                <div class="article-content">                          
+									<img class="image-main" src="/images/greyscale/gallery-4.jpg" />
+									<div class="circle"><p>Photo Gallery<br/> Title<p></div>
+									<div class="thumbs">
+										<img class="image-thumb" src="/images/greyscale/gallery-5.jpg" />
+										<img class="image-thumb" src="/images/greyscale/gallery-6.jpg" /> 											
+									</div>									
+								 </div>
+                                 <div class="article-expanded-content">
+                                     <h1>Expanded Content</h1>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                     <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                     <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                                 </div>
+                            </article> 
+                    </section>
+
+                    <section class="time-block">
+                        <article class="top t1">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:45PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/top-2.jpg" />
+                                <div class="tease">
+                                    <h1>Tee Ones Article Headline</h1>
+                                    <h3>Author LASTNAME</h3>
+                                    <p>Teaser body text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, tortor vel ultricies lacinia...</p>
+                                 </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>         
+                        </article>
+                        <article class="top media">
+                            <h3 class="article-type">Photo Blog</h3>
+                            <p class="article-time">3:05PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/photo-3.jpg" />
+                                <div class="tease">
+                                    <p>Teaser caption aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales.</p>
+                                </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>
+                        </article>
+                      <article class="top">
+                            <h3 class="article-type">Top Story</h3>
+                            <p class="article-time">3:45PM</p>
+                            <div class="article-content">
+                                <img src="/images/greyscale/top-4.jpg" />
+                                <div class="tease">
+                                    <h1>Top Story Title Usually A Bit Longer</h1>
+                                    <h3>Author LASTNAME</h3>
+                                    <p>Teaser text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum.</p>
+                                 </div>
+                             </div>
+                             <div class="article-expanded-content">
+                                 <h1>Expanded Content</h1>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus porta ligula et elementum. Maecenas et ante lectus. Cras et urna vel augue imperdiet porttitor malesuada eu ipsum. Vivamus nec augue quis diam malesuada vestibulum. Morbi a neque nec urna euismod ultricies in vitae nibh. Vivamus vel nisi mi. Fusce eleifend turpis eu arcu volutpat volutpat. Ut erat odio, sagittis quis mollis sit amet, consequat eget nibh. Mauris et felis mi. Vivamus suscipit nulla a dui hendrerit quis tristique velit varius. Nunc placerat lacus ut mauris viverra et fermentum erat auctor. </p>
+                                 <p>Aliquam erat volutpat. Nullam pellentesque tincidunt lobortis. Vivamus ut elit velit, nec rutrum neque. Etiam tellus dolor, ultrices eget placerat ut, sodales eget lectus. Aenean a posuere purus. Pellentesque lacinia arcu quis velit aliquet nec tempus nibh accumsan. Donec in fermentum tellus. Donec mauris sem, ultrices vel elementum vitae, suscipit semper velit. Curabitur non placerat velit. Integer commodo turpis vitae augue cursus sodales. </p>
+                                 <p>Sed eu augue metus. Mauris at scelerisque eros. Mauris cursus, risus interdum facilisis porttitor, ligula nulla adipiscing orci, in condimentum odio ipsum ut urna. Suspendisse potenti. In eget massa non elit iaculis laoreet. Donec commodo mi eget leo blandit tincidunt. Nam quis tortor in arcu consectetur pellentesque in nec purus. Donec lacinia semper enim, at euismod lectus semper vel. Etiam ultricies odio vel odio viverra vel iaculis dui tempus. Mauris elit nisi, congue vel tincidunt eget, consectetur ac dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida libero ut lectus iaculis quis pellentesque elit tempus. Nam bibendum elementum dui, sit amet accumsan nibh luctus a. Maecenas eget eleifend metus. </p>
+                             </div>         
+                        </article>
+                    </section>
+
+                </div>
+                      
+    </section>  <!-- main content -->
+</body>
+</html>

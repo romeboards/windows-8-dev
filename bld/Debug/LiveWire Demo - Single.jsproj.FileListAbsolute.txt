@@ -1,0 +1,26 @@
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bin\Debug\resources.pri
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bin\Debug\AppxManifest.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bin\Debug\LiveWire Demo - Single.build.appxrecipe
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\priconfig.xml.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\layout.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\resources.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\pri.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\priconfig.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\layout.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\resources.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\pri.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\LanguageQualifiers.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\Timeline\Timeline\bld\Debug\ProjectArchitectures.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bin\Debug\resources.pri
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bin\Debug\AppxManifest.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bin\Debug\LiveWire Demo - Single.build.appxrecipe
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\priconfig.xml.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\layout.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\resources.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\pri.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\priconfig.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\layout.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\resources.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\pri.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\LanguageQualifiers.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Single\Timeline\bld\Debug\ProjectArchitectures.txt
