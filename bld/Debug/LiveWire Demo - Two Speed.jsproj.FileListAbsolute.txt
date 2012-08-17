@@ -1,0 +1,13 @@
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bin\Debug\resources.pri
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bin\Debug\AppxManifest.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bin\Debug\LiveWire Demo - Two Speed.build.appxrecipe
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\priconfig.xml.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\layout.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\resources.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\pri.resfiles.intermediate
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\priconfig.xml
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\layout.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\resources.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\pri.resfiles
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\LanguageQualifiers.txt
+C:\Users\william\Documents\Visual Studio 2012\Projects\LiveWire - Two\Timeline\bld\Debug\ProjectArchitectures.txt
